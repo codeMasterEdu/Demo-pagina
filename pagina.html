@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tienda Online de Equipos</title>
+    <!-- Vincular el archivo CSS -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header>
+        <h1>Code Masters - Tienda de Computadoras</h1>
+    </header>
+
+    <div class="main-content">
+        <!-- Barra lateral izquierda -->
+        <aside class="sidebar">
+            <h2>Categorías</h2>
+            <ul>
+                <li><a href="#">Laptops</a></li>
+                <li><a href="#">Desktops</a></li>
+                <li><a href="#">Accesorios</a></li>
+                <li><a href="#">Componentes</a></li>
+            </ul>
+            <h2>Filtros</h2>
+            <label>Marca</label>
+            <select>
+                <option value="acer">Acer</option>
+                <option value="asus">Asus</option>
+                <option value="hp">HP</option>
+            </select>
+
+            <label>Precio</label>
+            <input type="range" min="1000" max="10000" value="5000">
+
+            <button class="filter-button">Aplicar Filtros</button>
+        </aside>
+
+        <!-- Sección de productos -->
+        <section class="products-section">
+            <div class="top-bar">
+                <h2>Resultados (4)</h2>
+                <div class="sort-options">
+                    <label for="sort-by">Ordenar por:</label>
+                    <select id="sort-by">
+                        <option value="recommended">Recomendados</option>
+                        <option value="price-low-high">Precio: Bajo a Alto</option>
+                        <option value="price-high-low">Precio: Alto a Bajo</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <!-- Producto 1 -->
+                <div class="product">
+                    <img src="img/acer.webp" alt="Equipo Futurista 1">
+                    <h3>HP Gamer Omen Transcend</h3>
+                    <p class="price">S/ 7,899</p>
+                    <p>Llega mañana</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product">
+                    <img src="img/asus.jpg" alt="Asus">
+                    <h3>ASUS VivoBook 16</h3>
+                    <p class="price">S/ 1,999</p>
+                    <p>Llega mañana</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product">
+                    <img src="img/Gifabyte.jpg" alt="Gigabyte">
+                    <h3>Gigabyte Aero 15</h3>
+                    <p class="price">S/ 6,199</p>
+                    <p>Llega mañana</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="product">
+                    <img src="img/Victus.webp" alt="HP Victus">
+                    <h3>HP Victus</h3>
+                    <p class="price">S/ 3,099</p>
+                    <p>Llega mañana</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Paginación -->
+            <div class="pagination">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Code Masters. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
